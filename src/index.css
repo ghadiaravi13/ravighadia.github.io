@@ -10,56 +10,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Tech-inspired color palette */
-    --background: 210 40% 98%;
-    --foreground: 220 9% 10%;
+    /* Sophisticated HPC color palette */
+    --background: 216 28% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 9% 10%;
+    --card: 216 28% 9%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 9% 10%;
+    --popover: 216 28% 9%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Tech blue primary */
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 100% 70%;
+    /* Premium gold accent for sophistication */
+    --primary: 45 93% 65%;
+    --primary-foreground: 216 28% 7%;
+    --primary-glow: 45 100% 75%;
 
-    /* Gradient backgrounds */
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 220 9% 20%;
+    /* Deep tech blues */
+    --secondary: 216 28% 12%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 94%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 216 28% 15%;
+    --muted-foreground: 210 40% 70%;
 
-    /* Green accent for highlights */
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 142 76% 50%;
+    /* Cyan accent for tech highlights */
+    --accent: 189 95% 55%;
+    --accent-foreground: 216 28% 7%;
+    --accent-glow: 189 100% 65%;
 
+    /* High-contrast system colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 216 28% 18%;
+    --input: 216 28% 15%;
+    --ring: 45 93% 65%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 100% 70%));
-    --gradient-accent: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 50%));
-    --gradient-bg: linear-gradient(180deg, hsl(210 40% 98%), hsl(210 40% 95%));
-    --gradient-subtle: linear-gradient(135deg, hsl(217 91% 60% / 0.1), hsl(142 76% 36% / 0.1));
+    /* HPC-inspired gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 93% 65%), hsl(45 100% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(189 95% 55%), hsl(189 100% 65%));
+    --gradient-bg: linear-gradient(180deg, hsl(216 28% 7%), hsl(216 32% 5%));
+    --gradient-hero: linear-gradient(135deg, hsl(216 28% 7%) 0%, hsl(216 32% 9%) 50%, hsl(216 28% 7%) 100%);
+    --gradient-datacenter: linear-gradient(45deg, hsl(216 28% 7% / 0.9), hsl(189 95% 55% / 0.1), hsl(45 93% 65% / 0.1));
 
-    /* Shadows with tech glow */
-    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.3);
-    --shadow-glow: 0 0 40px hsl(217 100% 70% / 0.4);
-    --shadow-accent: 0 5px 20px -5px hsl(142 76% 36% / 0.3);
+    /* Premium shadows with HPC glow */
+    --shadow-elegant: 0 25px 50px -12px hsl(45 93% 65% / 0.4);
+    --shadow-glow: 0 0 60px hsl(45 100% 75% / 0.6);
+    --shadow-accent: 0 10px 30px -5px hsl(189 95% 55% / 0.5);
+    --shadow-datacenter: 0 0 100px hsl(189 95% 55% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.1);
 
-    /* Animation variables */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Advanced animation variables */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-elastic: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
@@ -79,47 +83,49 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode with tech aesthetics */
-    --background: 220 27% 8%;
-    --foreground: 210 40% 98%;
+    /* Enhanced dark mode for ultimate sophistication */
+    --background: 216 28% 4%;
+    --foreground: 0 0% 100%;
 
-    --card: 220 27% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 216 28% 6%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 220 27% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 216 28% 6%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 100% 70%;
+    --primary: 45 93% 70%;
+    --primary-foreground: 216 28% 4%;
+    --primary-glow: 45 100% 80%;
 
-    --secondary: 220 27% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 216 28% 8%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 27% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 216 28% 10%;
+    --muted-foreground: 210 40% 75%;
 
-    --accent: 142 76% 50%;
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 142 76% 60%;
+    --accent: 189 95% 60%;
+    --accent-foreground: 216 28% 4%;
+    --accent-glow: 189 100% 70%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 27% 18%;
-    --input: 220 27% 18%;
-    --ring: 217 91% 60%;
+    --border: 216 28% 12%;
+    --input: 216 28% 10%;
+    --ring: 45 93% 70%;
 
-    /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 100% 70%));
-    --gradient-accent: linear-gradient(135deg, hsl(142 76% 50%), hsl(142 76% 60%));
-    --gradient-bg: linear-gradient(180deg, hsl(220 27% 8%), hsl(220 27% 5%));
-    --gradient-subtle: linear-gradient(135deg, hsl(217 91% 60% / 0.15), hsl(142 76% 50% / 0.15));
+    /* Enhanced dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 93% 70%), hsl(45 100% 80%));
+    --gradient-accent: linear-gradient(135deg, hsl(189 95% 60%), hsl(189 100% 70%));
+    --gradient-bg: linear-gradient(180deg, hsl(216 28% 4%), hsl(216 32% 2%));
+    --gradient-hero: linear-gradient(135deg, hsl(216 28% 4%) 0%, hsl(216 32% 6%) 50%, hsl(216 28% 4%) 100%);
+    --gradient-datacenter: linear-gradient(45deg, hsl(216 28% 4% / 0.95), hsl(189 95% 60% / 0.15), hsl(45 93% 70% / 0.15));
 
-    /* Dark mode shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.5);
-    --shadow-glow: 0 0 40px hsl(217 100% 70% / 0.6);
-    --shadow-accent: 0 5px 20px -5px hsl(142 76% 50% / 0.5);
+    /* Enhanced dark shadows */
+    --shadow-elegant: 0 25px 50px -12px hsl(45 93% 70% / 0.6);
+    --shadow-glow: 0 0 80px hsl(45 100% 80% / 0.8);
+    --shadow-accent: 0 10px 30px -5px hsl(189 95% 60% / 0.7);
+    --shadow-datacenter: 0 0 120px hsl(189 95% 60% / 0.4), inset 0 1px 0 hsl(0 0% 100% / 0.15);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -148,31 +154,89 @@ All colors MUST be HSL.
 
 @layer components {
   .hero-gradient {
-    background: var(--gradient-bg);
+    background: var(--gradient-hero);
+    position: relative;
+  }
+
+  .hero-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-datacenter);
+    opacity: 0.8;
+  }
+
+  .datacenter-grid {
+    background-image: 
+      radial-gradient(circle at 2px 2px, hsl(var(--accent)) 1px, transparent 0),
+      linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 40px 40px, 40px 40px, 40px 40px;
+    opacity: 0.4;
   }
 
   .tech-glow {
     box-shadow: var(--shadow-glow);
   }
 
+  .datacenter-glow {
+    box-shadow: var(--shadow-datacenter);
+  }
+
   .animate-float {
-    animation: float 3s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
   }
 
   .animate-pulse-slow {
-    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse-glow 3s ease-in-out infinite;
   }
 
-  .tech-grid {
-    background-image: 
-      linear-gradient(hsl(var(--border)) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
-    background-size: 50px 50px;
-    opacity: 0.3;
+  .animate-data-flow {
+    animation: data-flow 8s linear infinite;
+  }
+
+  .processing-indicator {
+    background: linear-gradient(90deg, 
+      transparent, 
+      hsl(var(--accent) / 0.6), 
+      transparent
+    );
+    animation: processing 2s linear infinite;
+  }
+
+  .server-rack {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--card)) 0%,
+      hsl(var(--muted)) 50%,
+      hsl(var(--card)) 100%
+    );
+    border: 1px solid hsl(var(--border));
+    position: relative;
+  }
+
+  .server-rack::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-accent);
+    opacity: 0.6;
+    animation: processing 3s ease-in-out infinite;
   }
 
   .social-icon {
-    @apply transition-smooth hover:bg-primary/20 hover:text-primary hover:shadow-accent;
+    @apply transition-smooth hover:bg-primary/20 hover:text-primary hover:shadow-accent hover:scale-110;
+  }
+
+  .neural-network {
+    background: radial-gradient(
+      ellipse at center,
+      hsl(var(--accent) / 0.1) 0%,
+      transparent 70%
+    );
   }
 }
 
@@ -184,6 +248,10 @@ All colors MUST be HSL.
   .transition-bounce {
     transition: var(--transition-bounce);
   }
+
+  .transition-elastic {
+    transition: var(--transition-elastic);
+  }
 }
 
 @keyframes float {
@@ -191,6 +259,46 @@ All colors MUST be HSL.
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes data-flow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes processing {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes neural-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
   }
 }

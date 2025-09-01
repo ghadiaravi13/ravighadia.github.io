@@ -77,12 +77,14 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-accent': 'var(--gradient-accent)', 
 				'gradient-bg': 'var(--gradient-bg)',
-				'gradient-subtle': 'var(--gradient-subtle)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-datacenter': 'var(--gradient-datacenter)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'glow': 'var(--shadow-glow)',
-				'accent': 'var(--shadow-accent)'
+				'accent': 'var(--shadow-accent)',
+				'datacenter': 'var(--shadow-datacenter)'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -103,11 +105,23 @@ export default {
 				},
 				'float': {
 					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-10px)' }
+					'50%': { transform: 'translateY(-12px)' }
 				},
-				'pulse-slow': {
-					'0%, 100%': { opacity: '1' },
-					'50%': { opacity: '.7' }
+				'pulse-glow': {
+					'0%, 100%': { opacity: '0.8', transform: 'scale(1)' },
+					'50%': { opacity: '1', transform: 'scale(1.05)' }
+				},
+				'data-flow': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100vw)' }
+				},
+				'processing': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
+				},
+				'neural-pulse': {
+					'0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
+					'50%': { opacity: '0.8', transform: 'scale(1.1)' }
 				},
 				'slide-up': {
 					'0%': { transform: 'translateY(20px)', opacity: '0' },
@@ -117,8 +131,11 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 3s ease-in-out infinite',
-				'pulse-slow': 'pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'float': 'float 4s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+				'data-flow': 'data-flow 8s linear infinite',
+				'processing': 'processing 2s linear infinite',
+				'neural-pulse': 'neural-pulse 4s ease-in-out infinite',
 				'slide-up': 'slide-up 0.6s ease-out'
 			}
 		}

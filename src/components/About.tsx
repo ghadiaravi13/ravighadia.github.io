@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, MapPin, Calendar } from "lucide-react";
-import techPattern from "@/assets/tech-pattern.jpg";
+import { GraduationCap, MapPin, Calendar, Cpu, Brain, Zap } from "lucide-react";
+import hpcPattern from "@/assets/hpc-pattern.jpg";
 
 const About = () => {
   const education = [
@@ -21,8 +21,11 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-24 bg-gradient-datacenter relative overflow-hidden">
+      {/* Background enhancement */}
+      <div className="absolute inset-0 neural-network opacity-30" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
@@ -36,10 +39,10 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left column - Bio */}
           <div className="space-y-8">
-            <Card className="p-8 shadow-elegant transition-smooth hover:shadow-glow">
+            <Card className="p-8 shadow-datacenter transition-elastic hover:shadow-glow server-rack">
               <div className="space-y-6">
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <GraduationCap className="h-5 w-5" />
+                <div className="flex items-center space-x-2 text-accent">
+                  <Brain className="h-5 w-5" />
                   <span className="font-medium">Current Research</span>
                 </div>
                 <p className="text-foreground leading-relaxed">
@@ -51,10 +54,10 @@ const About = () => {
               </div>
             </Card>
 
-            <Card className="p-8 shadow-elegant transition-smooth hover:shadow-glow">
+            <Card className="p-8 shadow-datacenter transition-elastic hover:shadow-glow server-rack">
               <div className="space-y-6">
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <MapPin className="h-5 w-5" />
+                <div className="flex items-center space-x-2 text-accent">
+                  <Cpu className="h-5 w-5" />
                   <span className="font-medium">Professional Experience</span>
                 </div>
                 <p className="text-foreground leading-relaxed">
@@ -67,11 +70,11 @@ const About = () => {
               </div>
             </Card>
 
-            <Card className="p-8 shadow-elegant transition-smooth hover:shadow-glow">
+            <Card className="p-8 shadow-datacenter transition-elastic hover:shadow-glow server-rack">
               <div className="space-y-6">
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <Calendar className="h-5 w-5" />
-                  <span className="font-medium">Research Interests</span>
+                <div className="flex items-center space-x-2 text-accent">
+                  <Zap className="h-5 w-5" />
+                  <span className="font-medium">Research Vision</span>
                 </div>
                 <p className="text-foreground leading-relaxed">
                   My research interests lie in designing efficient systems for running massive AI models. 
@@ -85,9 +88,9 @@ const About = () => {
 
           {/* Right column - Skills & Education */}
           <div className="space-y-8">
-            {/* Education */}
-            <Card className="p-8 shadow-elegant">
-              <h3 className="text-2xl font-bold mb-6 text-primary">Education</h3>
+            {/* Education with enhanced styling */}
+            <Card className="p-8 shadow-datacenter server-rack">
+              <h3 className="text-2xl font-bold mb-6 text-primary">Education & Focus</h3>
               {education.map((edu, index) => (
                 <div key={index} className="space-y-2">
                   <h4 className="font-semibold text-foreground">{edu.degree}</h4>
@@ -98,14 +101,14 @@ const About = () => {
               ))}
             </Card>
 
-            {/* Skills */}
-            <Card className="p-8 shadow-elegant relative overflow-hidden">
+            {/* Enhanced Skills */}
+            <Card className="p-8 shadow-datacenter relative overflow-hidden server-rack">
               <div 
-                className="absolute inset-0 opacity-5 bg-cover bg-center"
-                style={{ backgroundImage: `url(${techPattern})` }}
+                className="absolute inset-0 opacity-10 bg-cover bg-center"
+                style={{ backgroundImage: `url(${hpcPattern})` }}
               />
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-6 text-primary">Technical Skills</h3>
+                <h3 className="text-2xl font-bold mb-6 text-primary">Technical Expertise</h3>
                 <div className="space-y-6">
                   {skills.map((skillGroup, index) => (
                     <div key={index}>
@@ -115,7 +118,7 @@ const About = () => {
                           <Badge 
                             key={skillIndex}
                             variant="secondary" 
-                            className="transition-smooth hover:bg-primary/20 hover:text-primary"
+                            className="transition-elastic hover:bg-primary/30 hover:text-primary hover:shadow-accent transform hover:scale-105"
                           >
                             {skill}
                           </Badge>

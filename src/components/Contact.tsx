@@ -6,8 +6,11 @@ import { Github, Linkedin, Mail, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-24 bg-gradient-datacenter relative overflow-hidden">
+      {/* Enhanced background */}
+      <div className="absolute inset-0 neural-network opacity-20" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
@@ -21,8 +24,8 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
           {/* Contact info */}
           <div className="space-y-8">
-            <Card className="p-8 shadow-elegant">
-              <h3 className="text-2xl font-bold mb-6 text-primary">Let's Connect</h3>
+            <Card className="p-8 shadow-datacenter server-rack">
+              <h3 className="text-2xl font-bold mb-6 text-primary">Connect & Collaborate</h3>
               <p className="text-foreground leading-relaxed mb-8">
                 I'm always interested in discussing cutting-edge research in AI systems, 
                 potential collaboration opportunities, or sharing insights about machine learning 
@@ -66,9 +69,9 @@ const Contact = () => {
             </Card>
           </div>
 
-          {/* Contact form */}
-          <Card className="p-8 shadow-elegant">
-            <h3 className="text-2xl font-bold mb-6 text-primary">Send a Message</h3>
+          {/* Enhanced contact form */}
+          <Card className="p-8 shadow-datacenter server-rack">
+            <h3 className="text-2xl font-bold mb-6 text-primary">Initiate Communication</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -113,9 +116,9 @@ const Contact = () => {
                 type="submit" 
                 variant="hero" 
                 size="lg" 
-                className="w-full group"
+                className="w-full group datacenter-glow"
               >
-                Send Message
+                Transmit Message
                 <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
@@ -124,8 +127,8 @@ const Contact = () => {
 
         {/* Call to action */}
         <div className="text-center mt-16">
-          <Card className="p-8 max-w-3xl mx-auto shadow-elegant bg-gradient-subtle">
-            <h3 className="text-2xl font-bold mb-4 text-primary">Research Collaboration</h3>
+          <Card className="p-8 max-w-3xl mx-auto shadow-datacenter bg-gradient-datacenter server-rack">
+            <h3 className="text-2xl font-bold mb-4 text-primary">Research Partnership Opportunities</h3>
             <p className="text-foreground mb-6 leading-relaxed">
               Interested in collaborating on AI systems research or discussing opportunities 
               in machine learning optimization? I'd love to hear from you.

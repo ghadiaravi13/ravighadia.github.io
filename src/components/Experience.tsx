@@ -37,8 +37,11 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="experience" className="py-24 bg-background relative">
+      {/* Subtle datacenter atmosphere */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/30 to-background" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
@@ -53,8 +56,8 @@ const Experience = () => {
         <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card key={index} className="p-8 shadow-elegant transition-smooth hover:shadow-glow group">
-                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+            <Card key={index} className="p-8 shadow-datacenter transition-elastic hover:shadow-glow group server-rack">
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                   {/* Left content */}
                   <div className="flex-1 space-y-4">
                     <div className="space-y-2">
